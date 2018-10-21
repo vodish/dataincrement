@@ -1,23 +1,21 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
-
 # Key
 $pass       =   'KEY_PASS_FROM_DATAINCREMENT';      //change for youself
+
+# Connect parametres to mysql database
+$host       =   'LOCALHOST';        //change for youself
+$user       =   'USERNAME';         //change for youself
+$password   =   'PASSWORD';         //change for youself
+$database   =   'DATABASE_NAME';    //change for youself
+
 
 
 # Access
 if ( !isset($_POST['query']) )         die( 'no query' );
 if ( @$_POST['pass'] != md5($pass) )   die( 'no pass' );
 // if ( $_SERVER['REMOTE_ADDR'] != '185.229.9.9' ) die( 'no ip' );
-
-
-# Params
-$host       =   'LOCALHOST';      //change for youself
-$user       =   'USERNAME';       //change for youself
-$password   =   'PASSWORD';       //change for youself
-$database   =   'DATABASE_NAME';  //change for youself
-
 
 
 
