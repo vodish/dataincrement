@@ -36,10 +36,10 @@ if ( $result = $mysqli->query($_POST['query'], MYSQLI_USE_RESULT) )
 {
     for ( $rows = array();  $r = $result->fetch_array(MYSQLI_ASSOC);  $rows[] = $r );
     
-    $data   =   json_encode($rows);
-    $data   =   gzdeflate($data, 9);
+    $rows   =   json_encode($rows);
+    $rows   =   gzdeflate($rows, 9);
     
-    die( $data );
+    die( $rows );
 }
 
 die( $mysqli->error );
