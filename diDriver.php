@@ -14,7 +14,7 @@ if ( @$_POST['pass'] != md5($pass) )   die( 'no pass' );
 
 # Params
 $host       =   'LOCALHOST';      //change for youself
-$user       =   'USETNAMR';       //change for youself
+$user       =   'USERNAME';       //change for youself
 $password   =   'PASSWORD';       //change for youself
 $database   =   'DATABASE_NAME';  //change for youself
 
